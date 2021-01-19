@@ -4,20 +4,20 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.phillipkruger</groupId>
     <artifactId>logging-ui-example</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <properties>
         <surefire-plugin.version>2.22.1</surefire-plugin.version>
         <maven.compiler.target>11</maven.compiler.target>
-        <quarkus.platform.version>999-SNAPSHOT</quarkus.platform.version>
+        <quarkus.platform.version>1.11.0.Final</quarkus.platform.version>
         <maven.compiler.source>11</maven.compiler.source>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <quarkus.platform.artifact-id>quarkus-bom</quarkus.platform.artifact-id>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven.compiler.parameters>true</maven.compiler.parameters>
-        <quarkus-plugin.version>999-SNAPSHOT</quarkus-plugin.version>
+        <quarkus-plugin.version>1.11.0.Final</quarkus-plugin.version>
         <compiler-plugin.version>3.8.1</compiler-plugin.version>
         <quarkus.platform.group-id>io.quarkus</quarkus.platform.group-id>
-        <logger-ui.version>1.0.0-SNAPSHOT</logger-ui.version>
+        <logging-manager.version>1.0.0</logging-manager.version>
     </properties>
     
     <dependencyManagement>
@@ -54,9 +54,10 @@
             <artifactId>quarkus-smallrye-health</artifactId>
         </dependency>
         <dependency>
-            <groupId>io.quarkiverse.loggingui</groupId>
-            <artifactId>quarkus-logging-ui</artifactId>
-            <version>${logger-ui.version}</version>
+            <groupId>io.quarkiverse.loggingmanager</groupId>
+            <artifactId>quarkus-logging-manager</artifactId>
+            <version>${logging-manager.version}</version>
+            <scope>runtime</scope>
         </dependency>
     </dependencies>
     <build>

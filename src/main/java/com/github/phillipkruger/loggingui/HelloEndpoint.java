@@ -17,7 +17,7 @@ public class HelloEndpoint {
     
     @GET @Path("/{name}")
     public String hello(@PathParam("name") String name){
-        LOG.log(Level.INFO, "{0} is saying hello", name);
-        return "Goeie naand " + name;
+        LOG.log(Level.INFO, "=======> {0} is saying hello", name);
+        return "Goeie naand " + name + ", how are you ?";
     }
 }
