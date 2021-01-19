@@ -1,4 +1,4 @@
-# logging-ui-example project
+# logging-manager-example project
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
