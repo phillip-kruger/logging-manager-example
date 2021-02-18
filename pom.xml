@@ -8,16 +8,15 @@
     <properties>
         <surefire-plugin.version>2.22.1</surefire-plugin.version>
         <maven.compiler.target>11</maven.compiler.target>
-        <quarkus.platform.version>999-SNAPSHOT</quarkus.platform.version>
+        <quarkus.platform.version>1.12.0.Final</quarkus.platform.version>
         <maven.compiler.source>11</maven.compiler.source>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <quarkus.platform.artifact-id>quarkus-bom</quarkus.platform.artifact-id>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven.compiler.parameters>true</maven.compiler.parameters>
-        <quarkus-plugin.version>999-SNAPSHOT</quarkus-plugin.version>
+        <quarkus-plugin.version>1.12.0.Final</quarkus-plugin.version>
         <compiler-plugin.version>3.8.1</compiler-plugin.version>
         <quarkus.platform.group-id>io.quarkus</quarkus.platform.group-id>
-        <!--<logging-manager.version>1.1.0-SNAPSHOT</logging-manager.version>-->
     </properties>
     
     <dependencyManagement>
@@ -54,15 +53,11 @@
             <artifactId>quarkus-smallrye-health</artifactId>
         </dependency>
         <dependency>
-            <groupId>io.quarkus</groupId>
-            <artifactId>quarkus-logging-manager</artifactId>
-        </dependency>
-<!--        <dependency>
             <groupId>io.quarkiverse.loggingmanager</groupId>
             <artifactId>quarkus-logging-manager</artifactId>
-            <version>${logging-manager.version}</version>
+            <version>1.1.0</version>
             <scope>runtime</scope>
-        </dependency>-->
+        </dependency>
     </dependencies>
     <build>
         <plugins>
